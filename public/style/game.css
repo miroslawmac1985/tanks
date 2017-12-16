@@ -1,0 +1,179 @@
+body {
+   width: 1404px;
+   background: url('../img/tlo.jpg') repeat 0 0;
+}
+
+#container {
+   width: 706px;
+   margin-left: 200px;
+   float: left;
+}
+
+#container_right {
+   float: left;
+   margin: 124px 0 0 50px;
+}  
+
+#players_list {
+   min-width: 160px;
+   height: 250px;
+   border: 1px solid #000;
+   float: left;
+   margin: 20px 0 0 0;
+   padding: 10px 20px;
+   display: none;
+   overflow: auto;
+}
+p#players_list_title {
+   margin-bottom: 12px;
+   font-weight: bold;
+}
+#players_list ol {
+   list-style: decimal inside;
+}
+#players_list ol li {
+   margin-bottom: 8px;
+}
+#players_list ol li.user {
+   color: green;
+}   
+#players_list ol li p {
+   float: right;
+}   
+
+canvas {
+	display: block;
+}
+
+#start_button {
+   margin: 50px 10px 30px 0px;
+   cursor: pointer;
+}
+
+#end_button {
+   display: none;
+   margin: 50px 10px 30px 0px;
+   cursor: pointer;
+}
+
+#chat {
+   width: 694px;
+   height: 28px;
+   border: 1px solid #000;
+   padding: 0 0 0 10px;
+   margin: 0 0 15px 0px;
+   display: none;
+}
+#chat_title {
+   display: none;
+}
+#chat_input {
+   width: 684px;
+   height: 26px;
+   padding: 0px;
+   border: none;
+   background-color: transparent;
+}
+#chat_box {
+   width: 684px;
+   height: 300px;
+   border: 1px solid #000;
+   padding: 10px 10px 10px 10px;
+   margin: 0 0 100px 0px;
+   overflow: auto;
+   display: none;
+}
+#chat_box p {
+   margin-bottom: 7px;
+}
+
+#begin_game, #for_game_message {
+   width: 694px;
+   height: 28px;
+   padding: 0 0 8px 10px;
+   margin: 0 0 10px 0px;
+   font-weight: bold;
+   font-size: 32px;
+}
+#for_game_message {
+   border: 1px solid #000;
+   display: none;
+   padding: 8px 0 0 10px;
+   font-weight: normal;
+   font-size: 19px;
+}   
+
+.clear {
+   clear: both;
+}
+
+.success {
+   color: green;
+}
+.danger {
+   color: red;
+}
+
+
+#canvasContainer {
+   width: 706px;
+   height: 322px;
+/*   width: 610px;
+   height: 226px;*/
+   position: relative;
+   margin-bottom: 30px;
+}
+
+
+#tilemapCanvas, #localPlayerCanvas, #remotePlayersCanvas, #shootsCanvas, #otherCanvas {
+   width: 704px;
+   height: 320px;
+/*   width: 608px;
+   height: 224px;*/
+   border: 1px solid #000;
+   position: absolute;
+}
+#otherCanvas {
+   background: url('../img/tanks.jpg');
+   z-index: 999;
+}
+#localPlayerCanvas  {
+   z-index: 1000;
+}
+#remotePlayersCanvas {
+   z-index: 9;
+}
+
+#canvasContainer2 {
+   width: 202px;
+   height: 146px;
+/*   width: 178px;
+   height: 82px;*/
+   margin: 50px 0;
+   display: none;
+   position: relative;
+}
+#smallmapCanvas, #smallCanvas {
+   width: 200px;
+   height: 144px;
+/*   width: 176px;
+   height: 80px;*/
+   position: absolute;
+}
+#smallCanvas {
+   z-index: 999;
+}
+
+.score {
+   margin-left: 20px;
+}
+.lifes {
+   width: 48px;
+   height: 16px;
+   float: right;
+   background: url('../img/tank2.png');
+   margin: 1px 0 0 20px;
+}
+.user div.lifes {
+   background: url('../img/tank1.png');
+}

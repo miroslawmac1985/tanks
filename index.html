@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Multiplayer game</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/game.css">
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="/socket.io/socket.io.js"></script> 
+	</head>
+	<body>
+      
+      
+      <div id="container">  
+         <input id="start_button" type="button" value="start">
+         <input id="end_button" type="button" onclick="own_disconnect();" value="end">
+         <input id="user_name">
+         <div id="begin_game">Zagraj w TANKI</div>
+         <div id="for_game_message"></div>
+         <div id="canvasContainer">
+            <canvas id="tilemapCanvas" width="704" height="320"></canvas>
+            <canvas id="localPlayerCanvas" width="704" height="320"></canvas>
+            <canvas id="remotePlayersCanvas" width="704" height="320"></canvas>
+            <!--<canvas id="shootsCanvas" width="704" height="320"></canvas>-->
+            <canvas id="otherCanvas" width="704" height="320"></canvas>  
+         </div>
+         <p id="chat_title">Chat: </p>
+         <div id="chat"><input id="chat_input"/></div>
+         <div id="chat_box"></div>
+      </div>
+      
+      
+      <div id="container_right">
+         <div id="canvasContainer2">
+            <canvas id="smallmapCanvas" width="200" height="144"></canvas> 
+            <canvas id="smallCanvas" width="200" height="144"></canvas> 
+         </div>
+         <div id="players_list">
+            <p id="players_list_title">Players:</p>
+            <ol></ol>   
+         </div>
+      </div>   
+      <div class="clear"></div>
+      
+      
+      <script src="js/initial.js"></script>
+		<script src="js/requestAnimationFrame.js"></script>
+		<script src="js/Keys.js"></script>
+      <script src="js/Mouse.js"></script>
+		<script src="js/Player.js"></script>
+      <script src="js/Tiles.js"></script>
+      <script src="js/Shoot.js"></script>
+      <script src="js/Camera.js"></script>
+      <script src="js/Stage.js"></script>
+      <script src="js/Bonus.js"></script>
+      <script src="js/events.js"></script>
+      <script src="js/helper_functions.js"></script>
+      <script src="js/socket_methods.js"></script>
+		<script src="js/game.js"></script>
+	</body>
+</html>
